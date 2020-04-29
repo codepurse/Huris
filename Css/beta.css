@@ -230,7 +230,19 @@ body, html {
     margin-top: -20px;
     border-radius: 5px;
 }
-
+.conbg6 {
+    height: 420px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url('https://hurisweb.s3-ap-southeast-1.amazonaws.com/_fourth_img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    box-shadow: -6px 0 white, 6px 0 white, 0 7px 10px -10px lightgray;
+    z-index: -99999 !important;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    border-radius: 5px;
+}
 .footer {
     padding-top: 70px;
     background-color: #212121;
