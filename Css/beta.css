@@ -158,7 +158,7 @@ body, html {
 
 .conbg1 {
     height: 420px;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url('https://hurisweb.s3-ap-southeast-1.amazonaws.com/imgabout1.jpg');
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url('https://hurisweb.s3-ap-southeast-1.amazonaws.com/_first_img.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
