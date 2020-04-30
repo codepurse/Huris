@@ -1122,6 +1122,12 @@ nav ul li:hover a span {
   padding-bottom: 0px;
 }
 
+#error {
+  font-family: roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .pfooter {
   font-family: AvertaStd-Regular;
   color: white;

@@ -101,16 +101,17 @@
                 <div class="modal-header" style="border: 0px;padding-top:25px;padding-bottom: 0px;">
                     <h5 class="modal-title" id="exampleModalLabel"><img src="Image/logoblue.png" class="img-fluid"
                             style="width: 60px;margin-right: 2px;"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body" style="border: 0px;">
-                    <p class="pnews" style="margin-bottom: 0px; margin-top: 10px;">Would you like to receive updates and news from us? Subscribe now.</p>
+                <div class="modal-body" style="border: 0px;" id="modalbody">
+                   <p class="pnews" style="margin-bottom: 0px; margin-top: 10px;">Would you like to receive updates and news from us? Subscribe now.</p>
                     <p class="penter">Enter your email</p>
                     </p>
-                    <input type="text" class="txtnews">
-                    <button type="button" class="btnenter">Subscribe</button>
+                    <input type="text" class="txtnews" id="txtnews" type="email">
+                    <span class="text-danger" id="error"></span>
+                    <button type="button" class="btnenter subscribe">Subscribe</button>
                     <p class="pquestions">Questions? Email us at <span style="color: #0f4c81;">consult@huris.com.ph</span>
                     </p>
 
@@ -485,12 +486,15 @@
         $('[data-toggle="popover"]').popover()
     })
 
+  
     $(function () {
         $(".imgnewsletter").on('click', function () {
             $(".imgnewsletter").popover('dispose');
             $('#exampleModal').modal('show');
         });
     });
+
+    
 
     $(document).ready(function () {
         function animateDivers() {
@@ -593,6 +597,61 @@
     }, function () {
         $('.imgSolution3').attr('src', 'Image/sol1.png');
     });
+
+    let page = 1;
+
+     let form = `
+        <div class="form-group">
+            <h5 class="mb-3">Please fill up.</h5>
+            <input class="form-control mb-3" placeholder="Full Name"/>
+            <input class="form-control mb-3" placeholder="Email"/>
+            <input class="form-control mb-3" placeholder="Mobile Number"/>
+            <input class="form-control mb-3" placeholder="Address"/>
+            <button class="form-control btn btn-primary">Submit</button>
+        </div>
+    `
+      let modalbody = ` <p class="pnews" style="margin-bottom: 0px; margin-top: 10px;">Would you like to receive updates and news from us? Subscribe now.</p>
+                    <p class="penter">Enter your email</p>
+                    </p>
+                    <input type="text" class="txtnews">
+                    <button type="button" class="btnenter subscribe">Subscribe</button>
+                    <p class="pquestions">Questions? Email us at <span style="color: #0f4c81;">consult@huris.com.ph</span>
+                    </p>
+                    `
+    let txtnews = $('#txtnews');
+
+     function validateEmail() {
+
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      let email = $('#txtnews').val();
+      if(emailReg.test(email)){
+        return true;
+      }else{
+        return false;
+      }
+      // return emailReg.test( $email );
+    }
+
+        $('.subscribe').on('click', function(){
+            if(txtnews.val() == ""){
+                     document.querySelector('#txtnews').style.borderColor = "red";
+                     $('#error').text('Email is required');
+            }else if(!validateEmail()){
+                $('#error').text('Please enter correct email');
+            }else{
+                console.log("with values")
+                $('#modalbody').html(form)
+            }
+            
+        })
+   
+
+
+    $(".close").on('click', function () {
+        $('#exampleModal').modal('toggle');
+    });
+ 
+
 </script>
 
 </html>
