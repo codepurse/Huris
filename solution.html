@@ -162,7 +162,7 @@
     <div class="container con" id="hideCapsules">
         <div class="row align-items-center">
             <div class="col-lg-7" style="padding-bottom: 70px;padding-top: 70px;">
-                <div class="row putAllText putSecondaryAllText" style="margin-top: 20px;overflow-y: scroll;height:550px;">
+                <div class="row putAllText putSecondaryAllText" style="margin-top: 20px;">
                     
                     <!-- INSERT APPEND HERE -->
 
@@ -272,41 +272,34 @@ $(document).ready(function () {
     $('#mdsDesc').css('opacity', '0');
 
     var createCapsules = `
-            <div class="col-lg-4" style="width: 100%;">
+                <div class="col-lg-4 text-center w-100">
                 <div class="btn box contentAllText">
-                    <p class="pTop pChar"></p>
-                    <p class="pTitleBox pTopic"></p>
+                    <p class="pTitleBox pTopic mb-0"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText w-100" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
-                </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
-                </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
-                </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-
                 <div class="btn box contentAllText" style="background-color: #225992;">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                </div>
+            </div>
+            <div class="col-lg-4" style="width: 100%; margin-top: -60px;">
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                </div>
+            </div>
+            <div class="col-lg-4" style="width: 100%;margin-top: -20px;">
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                </div>
+            </div>
+            <div class="col-lg-4" style="width: 100%;margin-top: 20px;">
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;">
                     </p>
                 </div>
             </div>
@@ -315,75 +308,63 @@ $(document).ready(function () {
     var createSecondaryCapsules1 = `
             <div class="col-lg-4" style="width: 100%;">
                 <div class="btn box contentAllText">
-                    <p class="pTop pChar"></p>
-                    <p class="pTitleBox pTopic"></p>
+                    <p class="pTitleBox pTopic mb-0"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%; margin-top: -80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: -40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;"">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
 
             <div class="col-lg-4" style="width: 100%">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" id="outofbox" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%; margin-top: -80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;margin-top: -40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" id="turnaround" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" id="turnaround" style="color: white;"></p>
                 </div>
             </div>
             <div class="col-lg-4" style="width: 100%;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
     `;
@@ -391,34 +372,29 @@ $(document).ready(function () {
     var createsecondaryCapsules2 = `
             <div class="col-lg-5" style="width: 70%;">
                 <div class="btn box contentAllText">
-                    <p class="pTop pChar"></p>
-                    <p class="pTitleBox pTopic"></p>
+                    <p class="pTitleBox pTopic mb-0"></p>
                 </div>
             </div>
             <div class="col-lg-5" style="width: 70%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
-            <div class="col-lg-5" style="width: 70%;margin-top: -80px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+            <div class="col-lg-5" style="width: 70%;margin-top: -30px;">
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
-            <div class="col-lg-5" style="width: 70%; margin-top: -40px;">
-                <div class="btn box contentAllText" style="background-color: #225992; display: block">
-                    <p class="pTop pChar" style="color: #113257;"></p>
-                    <p class="pTitleBox pTopic" style="color: white;"></p>
+            <div class="col-lg-5" style="width: 70%; margin-top: 10px;">
+                <div class="btn box contentAllText" style="background-color: #225992;">
+                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
             </div>
     `;
     var createsecondaryCapsules3 = `
             <div class="col-lg-4" style="width: 100%;">
                 <div class="btn box contentAllText">
-                    <p class="pTop pChar"></p>
-                    <p class="pTitleBox pTopic"></p>
+                    <p class="pTitleBox pTopic mb-0"></p>
                 </div>
             </div>
     `;
@@ -447,6 +423,8 @@ $(document).ready(function () {
                         <li>Organizational Set-up</li>
                     </ul>`
     let turnaround = `<p>Achieving a Positive<br /> Turn-around in Employee and Organizational Performance thru Positive Discipline</p>`
+    let outofbox = `<p>Thinking <br /> Out-Of-The-Box: Embracing Innovative Leadership</p>`
+
     var titletop = document.getElementsByClassName("pTopic");
     var contentall = document.getElementsByClassName("contentAllText");
     $('.secondaryparentAnimate').on('click', function() {
@@ -503,19 +481,18 @@ $(document).ready(function () {
                     $('.contentAllText').css('background-color', '#225992')
                     $('.contentAllText').find('p').removeAttr('style');
                     // $('.contentAllText').find('.pTop').css({'color': '#113257'})
-                    $('.contentAllText').find('.pTitleBox').css({'color': 'white', 'margin-bottom': '30%'})
+                    $('.contentAllText').find('.pTitleBox').css({'color': 'white'})
 
                     $(contentall[index]).css({'background-color': '#ffffff'})
                     $(contentall[index]).find('p').removeAttr('style');
                     // $(contentall[index]).find('.pTop').css({'color': '#beccdb'})
-                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf', 'margin-bottom': '30%'})
+                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf'})
               })
             })
             
             
         }else if(secondarycheckTabValue == 'secondarysecondtab') {
             $('.putSecondaryAllText').html(createsecondaryCapsules2)
-            $('.pTopic').css('margin-bottom', '30%')
 
             $('#secondarythirdtab').css({
                 'border-radius': '25px',
@@ -561,17 +538,16 @@ $(document).ready(function () {
                     $('.contentAllText').css('background-color', '#225992')
                     $('.contentAllText').find('p').removeAttr('style');
                     // $('.contentAllText').find('.pTop').css({'color': '#113257'})
-                    $('.contentAllText').find('.pTitleBox').css({'color': 'white', 'margin-bottom': '30%'})
+                    $('.contentAllText').find('.pTitleBox').css({'color': 'white'})
 
                     $(contentall[index]).css({'background-color': '#ffffff'})
                     $(contentall[index]).find('p').removeAttr('style');
                     // $(contentall[index]).find('.pTop').css({'color': '#beccdb'})
-                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf', 'margin-bottom': '30%'})
+                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf'})
               })
             })
         }else if(secondarycheckTabValue == 'secondarythirdtab') {
             $('.putSecondaryAllText').html(createsecondaryCapsules3)
-            $('.pTopic').css('margin-bottom', '30%')
             $('#pTitleSideSub').text("");
 
             $('#secondarysecondtab').css({
@@ -617,12 +593,12 @@ $(document).ready(function () {
                     $('.contentAllText').css('background-color', '#225992')
                     $('.contentAllText').find('p').removeAttr('style');
                     // $('.contentAllText').find('.pTop').css({'color': '#113257'})
-                    $('.contentAllText').find('.pTitleBox').css({'color': 'white', 'margin-bottom': '30%'})
+                    $('.contentAllText').find('.pTitleBox').css({'color': 'white'})
 
                     $(contentall[index]).css({'background-color': '#ffffff'})
                     $(contentall[index]).find('p').removeAttr('style');
                     // $(contentall[index]).find('.pTop').css({'color': '#beccdb'})
-                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf', 'margin-bottom': '30%'})
+                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf'})
               })
             })
         }
@@ -656,7 +632,6 @@ $(document).ready(function () {
                 'height': '150px'
             })
             $('.putSecondaryAllText').html(createCapsules)
-            $('.pTopic').css('margin-bottom', '30%')
 
             $('#hideSecondCapsules').css('display', 'none');
             $('.pNumber').text(TITLECHARACTER[0][0])
@@ -678,19 +653,18 @@ $(document).ready(function () {
                     $('.contentAllText').css('background-color', '#225992')
                     $('.contentAllText').find('p').removeAttr('style');
                     // $('.contentAllText').find('.pTop').css({'color': '#113257'})
-                    $('.contentAllText').find('.pTitleBox').css({'color': 'white', 'margin-bottom': '30%'})
+                    $('.contentAllText').find('.pTitleBox').css({'color': 'white'})
 
                     $(contentall[index]).css({'background-color': '#ffffff'})
                     $(contentall[index]).find('p').removeAttr('style');
                     // $(contentall[index]).find('.pTop').css({'color': '#beccdb'})
-                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf', 'margin-bottom': '30%'})
+                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf'})
                 })
             }) 
         }else if(checkTabValue == 'secondTab') {
             $('#hideSecondCapsules').css('display', 'block');
             $( "#hideSecondCapsules" ).animate({opacity: 1}, 2000);
             $('.putSecondaryAllText').html(createSecondaryCapsules1)
-            $('.pTopic').css('margin-bottom', '23%')
             $('.pNumber').text(SECONDARYTITLECHARACTER[0][0])
             $('.pTitleSide').html(SECONDTITLETOPIC[0][0])
             $('.pTitleSideSub').html(SECONDARYTITLECONTENT[0][0])
@@ -766,7 +740,6 @@ $(document).ready(function () {
                 'height': '150px'
             })
             $('.putSecondaryAllText').html(createCapsules)
-            $('.pTopic').css('margin-bottom', '30%')
             $('#hideSecondCapsules').css('display', 'none');
             $('.pNumber').text(TITLECHARACTER[1][0])
             $('.pTitleSide').text(TITLETOPIC[1][0])
@@ -788,12 +761,12 @@ $(document).ready(function () {
                     $('.contentAllText').css('background-color', '#225992')
                     $('.contentAllText').find('p').removeAttr('style');
                     // $('.contentAllText').find('.pTop').css({'color': '#113257'})
-                    $('.contentAllText').find('.pTitleBox').css({'color': 'white', 'margin-bottom': '30%'})
+                    $('.contentAllText').find('.pTitleBox').css({'color': 'white'})
 
                     $(contentall[index]).css({'background-color': '#ffffff'})
                     $(contentall[index]).find('p').removeAttr('style');
                     // $(contentall[index]).find('.pTop').css({'color': '#beccdb'})
-                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf', 'margin-bottom': '30%'})
+                    $(contentall[index]).find('.pTitleBox').css({'color': '#6b8baf'})
               })
             })
         }
@@ -837,7 +810,7 @@ $(document).ready(function () {
     ]
 
     const SECONDTITLETOPIC = [
-        ['Managerial Leadership', 'Strategic Decision Making', 'Performance and Results Management', 'Building Powerful Teams', 'Transformational Leadership', 'Strategic and Critical Thinking', 'Driving Execution', 'New Leadership Styles for 21st Century','Thinking Out-Of-The-Box: Embracing Innovative Leadership', 'Coaching: Raising Performance to the Next Level', turnaround, 'Effective Conflict Resolution and Solving Employee Performance Issues thru Mediation'],
+        ['Managerial Leadership', 'Strategic Decision Making', 'Performance and Results Management', 'Building Powerful Teams', 'Transformational Leadership', 'Strategic and Critical Thinking', 'Driving Execution', 'New Leadership Styles for 21st Century', outofbox, 'Coaching: Raising Performance to the Next Level', turnaround, 'Effective Conflict Resolution and Solving Employee Performance Issues thru Mediation'],
         ['Business Savvy HR', 'Leveraging HR Analytics and Data', 'The Influential Partner', 'The Organizational Coach and Mentor'],
         ['Executive Coaching']
     ]

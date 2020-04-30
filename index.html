@@ -601,12 +601,37 @@
     let page = 1;
 
      let form = `
-        <div class="form-group">
+        <div class="form-group" style="font-family: sans-serif; font-size: 13px;">
             <h5 class="mb-3">Please fill up.</h5>
             <input class="form-control mb-3" placeholder="Full Name"/>
+            <input class="form-control mb-3" placeholder="Company Name"/>
             <input class="form-control mb-3" placeholder="Email"/>
             <input class="form-control mb-3" placeholder="Mobile Number"/>
-            <input class="form-control mb-3" placeholder="Address"/>
+            <input class="form-control mb-3" placeholder="Job Title"/>
+            <select class="form-control mb-3 px-2 py-1">
+                <option hidden>Number of Members in the Organization</option>
+                <option value="10">Less than 10</option>
+                <option value="30">10-30 Members</option>
+                <option value="100">40-100 Members</option>
+                <option value="1000" class="mb-2">More than 100 Members</option>
+            </select>
+            <select class="form-control mb-3 px-2 py-1">
+                <option hidden class="text-secondary">Industry</option>
+                <option value="10">Pharmaceutical</option>
+                <option value="10">Automotive</option>
+                <option value="10">Telecommunications</option>
+                <option value="10">Manufacturing</option>
+                <option value="10">Food and Beverage</option>
+                <option value="10">Banking and Finance</option>
+                <option value="10">Healthcare and Hospitals</option>
+                <option value="10">Hotel and Restaurants Tourism</option>
+                <option value="10">Transportation and Logistics</option>
+                <option value="10">Marketing</option>
+                <option value="10">Consumer and Enterprise Technology</option>
+                <option value="10">Education</option>
+                <option value="10">Social Enterprise</option>
+                <option value="10">Non Government Organization and Professional Associations</option>
+            </select>
             <button class="form-control btn btn-primary">Submit</button>
         </div>
     `
