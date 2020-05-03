@@ -470,7 +470,7 @@ $(document).ready(function () {
             
 
             SECONDTITLETOPIC[0].map(function(val, index) {
-                $(titletop[index]).text(val)
+                $(titletop[index]).html(val)
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').text(SECONDARYTITLECHARACTER[0][index])
                     $('.pTitleSide').text(SECONDTITLETOPIC[0][index])
