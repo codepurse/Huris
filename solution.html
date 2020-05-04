@@ -166,7 +166,6 @@
                     
                     <!-- INSERT APPEND HERE -->
 
-
                 </div>
             </div>
             <div class="col-lg-5" style="padding-left: 40px;position: relative;padding-top: 40px;">
@@ -272,37 +271,43 @@ $(document).ready(function () {
     $('#mdsDesc').css('opacity', '0');
 
     var createCapsules = `
-                <div class="col-lg-4 text-center w-100">
-                <div class="btn box contentAllText">
-                    <p class="pTitleBox pTopic mb-0"></p>
+                <div class="col-lg-4 text-center">
+                    <div class="btn box contentAllText">
+                        <p class="pTitleBox pTopic mb-0"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText w-100" style="background-color: #225992;">
-                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                <div class="col-lg-4" style="margin-top: 40px;">
+                    <div class="btn box contentAllText w-100" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
-                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%; margin-top: -60px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
-                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                <div class="col-lg-4" style="width: 100%; margin-top: -60px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: -20px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
-                    <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                <div class="col-lg-4" style="width: 100%;margin-top: -20px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4" style="width: 100%;margin-top: 20px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
-                    <p class="pTitleBox pTopic mb-0" style="color: white;">
-                    </p>
+                <div class="col-lg-4" style="width: 100%;margin-top: 20px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;">
+                        </p>
+                    </div>
                 </div>
-            </div>
+                <div class="col-lg-4" style="width: 100%;margin-top: -60px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;">
+                        </p>
+                    </div>
+                </div>
     `;
 
     var createSecondaryCapsules1 = `
@@ -399,6 +404,41 @@ $(document).ready(function () {
             </div>
     `;
 
+    var createCapsules4 = `
+                <div class="col-lg-4 text-center">
+                    <div class="btn box contentAllText">
+                        <p class="pTitleBox pTopic mb-0"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="margin-top: 40px;">
+                    <div class="btn box contentAllText w-100" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="width: 100%; margin-top: -60px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="width: 100%;margin-top: -20px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="width: 100%;margin-top: 20px;">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
+                        <p class="pTitleBox pTopic mb-0" style="color: white;">
+                        </p>
+                    </div>
+                </div>
+                
+    `;
+
     // var titlechar = document.getElementsByClassName("pChar");
     let mds_desc = `<h5 class="text-center titleTopDesc">HURIS regularly runs public and in-house workshops and seminars for both private and government sectors.  All are designed to answer the learning and development needs of executives and rising stars. These programs may also be re-designed to suit the specific needs of each client organization.</h5>`
 
@@ -460,8 +500,8 @@ $(document).ready(function () {
 
             $('.pNumber').text(SECONDARYTITLECHARACTER[0][0])
             
-            $('.pTitleSide').text(SECONDTITLETOPIC[0][0])
-            $('.pTitleSideSub').text(SECONDARYTITLECONTENT[0][0])
+            $('.pTitleSide').html(SECONDTITLETOPIC[0][0])
+            $('.pTitleSideSub').html(SECONDARYTITLECONTENT[0][0])
             //$('#turnaround').html(turnaround)
             // SECONDARYTITLECHARACTER[0].map(function(val, index) {
             //     $(titlechar[index]).text(val)
@@ -473,8 +513,8 @@ $(document).ready(function () {
                 $(titletop[index]).html(val)
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').text(SECONDARYTITLECHARACTER[0][index])
-                    $('.pTitleSide').text(SECONDTITLETOPIC[0][index])
-                    $('.pTitleSideSub').text(SECONDARYTITLECONTENT[0][index])
+                    $('.pTitleSide').html(SECONDTITLETOPIC[0][index])
+                    $('.pTitleSideSub').html(SECONDARYTITLECONTENT[0][index])
 
                     $('.divSide').find('#inquire_val').val(SECONDTITLETOPIC[0][index]);
 
@@ -642,7 +682,6 @@ $(document).ready(function () {
             //     $(titlechar[index]).text(val)
             // })
             TITLETOPIC[0].map(function(val, index) {
-                console.log(val);
                 $(titletop[index]).text(val)
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').text(TITLECHARACTER[0][index])
@@ -675,7 +714,6 @@ $(document).ready(function () {
             //     $(titlechar[index]).text(val)
             // })
             SECONDTITLETOPIC[0].map(function(val, index) {
-                console.log(val)
                 $(titletop[index]).html(val)
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').html(SECONDARYTITLECHARACTER[0][index])
@@ -739,7 +777,7 @@ $(document).ready(function () {
                 'width': '200px',
                 'height': '150px'
             })
-            $('.putSecondaryAllText').html(createCapsules)
+            $('.putSecondaryAllText').html(createCapsules4)
             $('#hideSecondCapsules').css('display', 'none');
             $('.pNumber').text(TITLECHARACTER[1][0])
             $('.pTitleSide').text(TITLETOPIC[1][0])
@@ -776,12 +814,12 @@ $(document).ready(function () {
     });
 
     const TITLECHARACTER = [
-        ['O', 'O', 'C', 'P', 'J', 'J'],
+        ['O', 'O', 'C', 'P', 'J', 'J', 'M'],
         ['K', 'B', 'H', 'C', 'C', 'T']
     ]
 
     const TITLETOPIC = [
-        ['Organization Assessment and Change Management', 'Organizational Design', 'Competency Framework Development / Assessment', 'Performance Management', 'Job Evaluation',  'Job Description'],
+        ['Organization Assessment and Change Management', 'Organizational Design', 'Competency Framework Development / Assessment', 'Performance Management', 'Job Evaluation',  'Job Description', 'Mergers and Acquisitions'],
         ['Knowledge Process Outsourcing', 'Background Investigation', 'HR Payroll Solution', 'CBA Negotiation', 'Corporate Set-up', 'Talent Assessment']        
     ]
     const TITLECONTENT = [
@@ -828,7 +866,7 @@ $(document).ready(function () {
             `Be a creative leader. Learn to think out of the box and embrace innovation and creativity in the workplace to overcome environmental challenges, resource constraints, obstacles, roadblocks and pitfalls in the workplace.`,
             `Help individuals in your team boost their performance and become valuable contributors to your organization's quest for excellence and progress. Learn the process of coaching individuals for performance enhancement in this program.`,
             `Acquire the skills needed to execute positive discipline to correct employee performance issues and help your team member achieve a positive turn-around. Learn and apply the concepts behind 'due process', and how to conduct a hearing or dialogue within the context of positive discipline.`,
-            `Learn the concepts and models of mediation as an effective method for conflict and dispute resolution. This program is an immersive program that presents simulations of the mediation process that allows a rich learning experience. You get to the root causes and real interests geared toward achieving resolutions that satisfy all those involved.`,
+            `Learn the concepts and models of mediation as an effective method for conflict and dispute resolution. This program is an immersive program presenting simulations of the mediation process that allows a rich learning experience. You get to the root causes and real interests geared toward achieving resolutions that satisfy all those involved.`,
         ],
         [
             `Highly credible HR capability requires understanding the organization’s needs to achieve success by transforming its functional support service to become an integral part of the business engine.`,
