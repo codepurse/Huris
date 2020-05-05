@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/articlespage.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <title>Articles - Huris</title>
+</head>
+
+<body>
+    <div class="container-fluid connavbar">
+        <div class="container con">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-position"
+                style="padding: 15px 0px;background-color: white !important;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logoblue.png" class="img-fluid imglogo" style="width: 120px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnabout"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="index.html">HOME</a></li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="beta.html">ABOUT</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="solution.html">SOLUTIONS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="articles.html">ARTICLES</a>
+                            </li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:#212121 ;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal3">EVENTS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="client.html">PARTNERS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contactus.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 px-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"
+                    style="position: relative;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel1 align-items-center">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-end" style="height: 100%;padding-bottom: 40px;">
+                                    <div class="col-lg-8">
+                                        <hr class="hrCarousel">
+<<<<<<< HEAD
+                                        <p class="pEventTitle animated fadeInUp fast">The Evolving Role of the Human
+                                            Resource Professional </p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Elevating the Role of Human
+                                            Resource in An Organization: Becoming Business Savvy<br /> <small><a
+                                                    href="#" class="text-primary">Read more..</a></small></p>
+
+                                        <div class="form-inline animated fadeInUp fast"
+                                            style="margin-top: 25px;animation-delay: 1.5s;">
+                                            <img src="Image/mags.jpg" class="img-fluid imgProfCarousel">
+=======
+                                        <p class="pEventTitle animated fadeInUp fast">The Evolving Role of the Human Resource Professional </p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Elevating the Role of Human Resource in An Organization: Becoming Business Savvy<br /> <small><a href="article2.html" class="text-primary">Read more..</a></small></p>
+
+                                        <div class="form-inline animated fadeInUp fast"
+                                            style="margin-top: 25px;animation-delay: 1.5s;">
+                                            <img src="Image/Maggie_Shih.JPG" class="img-fluid imgProfCarousel" style="transform: scaleX(-1); ">
+<<<<<<< HEAD
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+=======
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+                                            <label class="pAuthor">Maggie Munoz Shih</label>
+                                            <label class="pDate">February 15, 2019</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item  carousel2 align-items-center">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-end" style="height: 100%;padding-bottom: 40px;">
+                                    <div class="col-lg-8">
+                                        <hr class="hrCarousel">
+<<<<<<< HEAD
+                                        <p class="pEventTitle animated fadeInUp fast">Why Today’s HR Service Delivery
+                                            Model Is Failing?</p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Human Resource Has Undergone A
+                                            Numerous Process of Transformation Over the Past Decades. <br /> <small><a
+                                                    href="#" class="text-primary">Read more..</a></small></p>
+=======
+                                        <p class="pEventTitle animated fadeInUp fast">Why Today’s HR Service Delivery Model Is Failing?</p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Human Resource Has Undergone A Numerous Process of Transformation Over the Past Decades. <br /> <small><a href="Article5.html" class="text-primary">Read more..</a></small></p>
+<<<<<<< HEAD
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+=======
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+                                        <div class="form-inline animated fadeInUp fast"
+                                            style="margin-top: 25px;animation-delay: 1.5s;">
+                                            <img src="Image/karl.jpg" class="img-fluid imgProfCarousel">
+                                            <label class="pAuthor">Karl J. Larson, PhD</label>
+                                            <label class="pDate">February 15, 2019</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-9 justify-content-center">
+                <div class="card-deck">
+                        <a href="Article6.html">
+                            <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/Article/7/1.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <p class="pTitleCard">6 Issues Haunting Your HR and How to Exorcise Them</p>
+                                    <p class="pCardDesc">What do clowns, claws, and compliance all have in common?
+                                        Hopefully, the
+                                        answer is not that they all cause you to tremble in fear! While we can’t do much
+                                        to help you with your coulrophobia, our guide can help you face the horrors of
+                                        HR.
+=======
+                                    <p class="pTagsCard">CATEGORY</p>
+                                    <p class="pTitleCard">Strengthening What We Know About Strengths</p>
+                                    <p class="pCardDesc">Strengths, a focus on an individual’s capacity to perform, looking specifically at areas of high performance is a concept that stemmed from the educational research of the 1950’s.
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+=======
+                                    <p class="pTagsCard">CATEGORY</p>
+                                    <p class="pTitleCard">Strengthening What We Know About Strengths</p>
+                                    <p class="pCardDesc">Strengths, a focus on an individual’s capacity to perform, looking specifically at areas of high performance is a concept that stemmed from the educational research of the 1950’s.
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+                                    </p>
+
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <img src="Image/catlyn.jpg" class="img-fluid imgProf">
+                                        <label class="pAuthorCard">Catlyn Origitano<span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="Article3.html">
+                            <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/assesment.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTitleCard">The Need for Consulting Skills in an Organization</p>
+                                    <p class="pCardDesc">A management consultant is an adviser to help management
+                                        improve their overall business.
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <div class="circular">
+                                            <img src="Image/karl.jpg" class="img-fluid imgProf">
+                                        </div>
+                                        <label class="pAuthorCard">Karl Larson <span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </a>
+
+                    <a href="Article4.html">
+                        <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/articlebg.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORY</p>
+                                    <p class="pTitleCard">Organizational Development and Culture Transformation</p>
+                                    <p class="pCardDesc">WE ARE in the age of the “unthinkable”, the era of volatile and
+                                        unpredictable change & a world where the new rule is that there are no constant
+                                        rules
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <div class="circular">
+                                            <img src="Image/rick.jpg" class="img-fluid imgProf">
+                                        </div>
+                                        <label class="pAuthorCard">Enrique Abadesco <span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/event.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORY</p>
+                                    <p class="pTitleCard">Overcoming Cabin Fever in Times of COVID-19 Quarantine</p>
+                                    <p class="pCardDesc">Fortunately, there are simply ways to cope with it.
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <div class="circular">
+                                            <img src="Image/mags.jpg" class="img-fluid imgProf">
+                                        </div>
+                                        <label class="pAuthorCard">Maggie Munoz Shih <span class="pDateCard">February
+                                                14,
+                                                2016</span></label>
+=======
+=======
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+                </a>
+                        <a href="Article1.html">
+                            <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="Image/event.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="col-lg-8 align-self-center">
+                                        <p class="pTagsCard">CATEGORY</p>
+                                        <p class="pTitleCard">Overcoming Cabin Fever in Times of COVID-19 Quarantine</p>
+                                        <p class="pCardDesc">Fortunately, there are simply ways to cope with it.
+                                        </p>
+                                        <div class="form-inline" style="margin-top: 15px;">
+                                            <img src="Image/Maggie_Shih.JPG" class="img-fluid imgProf" style="transform: scaleX(-1);">
+                                            <label class="pAuthorCard">Maggie Munoz Shih <span class="pDateCard">February 14,
+                                                    2016</span></label>
+                                        </div>
+<<<<<<< HEAD
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+=======
+>>>>>>> 8a76f73ce5be8cb5d76bca948926e20026c2adbe
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <button class="btnLoadMore float-right">Load More Articles</button>
+            </div>
+            <div class="col-lg-3">
+                <p class="pFollow">Follow Huris</p>
+                <div class="form-inline">
+                    <img src="Image/facebookarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                    <img src="Image/twitterarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                    <img src="Image/linkedinarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                </div>
+                <hr>
+                <p class="pSubscribe">Keep up to date. Sign up for our Newsletter for the latest news.</p>
+                <input type="text" class="txtnewsletter" placeholder="Your email address">
+                <button class="btnSubscribe">Subscribe</button>
+                <p class="pSubscribe" style="margin-top: 20px;">Categories</p>
+                <p class="pCategories">Category (2)</p>
+                <p class="pCategories">Category (1)</p>
+                <p class="pCategories">Category (4)</p>
+                <p class="pCategories">Category (1)</p>
+                <p class="pSubscribe">Tags</p>
+                <div class="divTags" style="margin-top: -10px;">
+                    <label class="pTags">Tags</label><label class="pTags">Human</label><label
+                        class="pTags">Resource</label>
+                    <label class="pTags">Bussiness</label><label class="pTags">Tags</label><label
+                        class="pTags">Leadership</label>
+                    <label class="pTags">Tags</label><label class="pTags">Failling</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container" style="padding-bottom: 20px;">
+            <div class="row">
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">About us</p>
+                    <div class="form-group">
+                        <p class="pfootersub ">Company Profile</p>
+                        <p class="pfootersub">Mission & Vision</p>
+                        <p class="pfootersub">Executive Management</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Solutions</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Strategic Planning</p>
+                        <p class="pfootersub">Executive Coaching</p>
+                        <p class="pfootersub">KPO</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Trainings</p>
+                    <div class="form-group">
+                        <p class="pfootersub">CESB Accredited Programs</p>
+                        <p class="pfootersub">In-house L&D Progams</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Partners</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Partners</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Clients</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Contact us</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Address</p>
+                        <p class="pfootersub">
+                            Suite M3, Seven East Capitol Building<br />
+                            #7 East Capitol Drive, Barangay Kapitolyo Pasig City,<br />
+                            Metro Manila 1603 Philippines
+                        </p>
+                        <p class="pfootersub">Email us</p>
+                        <p class="pfootersub">consult@huris.com.ph</p>
+                        <p class="pfootersub">Telephone & Social</p>
+                        <p class="pfootersub">
+                            (02) 7746-2961<br />
+                            (02) 8661-5954
+                        </p>
+                        <p class="pfootersub">Send us a Message</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:40px;">
+                <div class="col-lg-6">
+                    <label style="font-family: hind;font-size:15px;color:white;">Copyright Human Resource Innovations
+                        and Solutions</label>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divfooterlogo">
+                        <img src="Image/facebook-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/twitter.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/linkedin-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
