@@ -86,9 +86,7 @@ body, html {
     }
 }
 
-.connavbar {
-    background-color: #212121;
-}
+
 
 .nav-link:after {
     content: '';

@@ -131,9 +131,6 @@ body, html {
     border: 0px;
 }
 
-.connavbar {
-    background-color: #212121;
-}
 
 .nav-link:after {
     content: '';
