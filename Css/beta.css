@@ -28,6 +28,10 @@ body, html {
     .box {
         width: 100% !important;
     }
+    .conImg {
+        max-height: 350px !important;
+        min-height: 350px !important;
+    }
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");

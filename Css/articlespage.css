@@ -51,7 +51,7 @@ body, html {
 }
 
 .hrCarousel {
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .pEventTitle {
@@ -71,7 +71,7 @@ body, html {
 }
 
 .pEventSubTitle {
-    font-family: Neuton,Poppins,sans-serif;
+    font-family: Neuton, Poppins, sans-serif;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
@@ -395,7 +395,7 @@ body, html {
 }
 
 .pAuthorCard {
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     color: #424242;
@@ -406,4 +406,26 @@ body, html {
     color: #727272;
     font-weight: 300 !important;
     margin-left: 10px;
+}
+
+.circular {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.circular img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
