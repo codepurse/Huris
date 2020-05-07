@@ -44,7 +44,7 @@ body, html {
 .divEventBg {
     height: 450px !important;
     max-height: 450px !important;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventlanding.jpg);
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/Events/eventlanding.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +146,7 @@ body, html {
 .carousel1 {
     height: 550px;
     max-height: 550px;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/articlebg.jpg);
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/Article/2/1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +155,7 @@ body, html {
 .carousel2 {
     height: 550px;
     max-height: 550px;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventsamples.jpg);
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/Events/eventsamples.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ body, html {
 .carousel3 {
     height: 550px;
     max-height: 550px;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/event.jpg);
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/Events/event.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

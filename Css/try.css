@@ -93,7 +93,7 @@ body, html {
 
 .conBg {
     height: 400px;
-    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url(../Image/about.jpg);
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url(../Image/Background/about.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
