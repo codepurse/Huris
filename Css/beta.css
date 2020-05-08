@@ -29,8 +29,8 @@ body, html {
         width: 100% !important;
     }
     .conImg {
-        max-height: 350px !important;
-        min-height: 350px !important;
+        max-height: 750px !important;
+        min-height: 750px !important;
     }
 }
 
