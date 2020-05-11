@@ -19,7 +19,7 @@
   src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
 }
 
-* { 
+* {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -151,6 +151,15 @@
   }
   .cardSolution1, .cardSolution2, .cardSolution3 {
     padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #p2 {
+    font-size: 1.2rem !important;
+  }
+  .btnSolution {
+    margin-top: -10px !important;
   }
 }
 
@@ -1469,7 +1478,7 @@ ul li {
 .btnexplore {
   font-family: AvertaStd-Regular;
   color: white;
-  background-color: rgba(15,76,129, 0.9);
+  background-color: rgba(15, 76, 129, 0.9);
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 120%;
@@ -1502,11 +1511,10 @@ ul li {
   transition: all 0.2s;
 }
 
-.cardSolution1:hover * , .cardSolution2:hover * , .cardSolution3:hover * {
+.cardSolution1:hover *, .cardSolution2:hover *, .cardSolution3:hover * {
   color: white !important;
 }
 
-.cardSolution1:hover , .cardSolution2:hover , .cardSolution3:hover   {
+.cardSolution1:hover, .cardSolution2:hover, .cardSolution3:hover {
   background-color: #0f4c81;
 }
-
