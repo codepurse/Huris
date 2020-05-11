@@ -13,9 +13,6 @@ body, html {
 }
 
 @media only screen and (max-width: 500px) {
-    .box {
-        margin-top: 400px !important;
-    }
     .imgHide {
         display: block !important;
     }
@@ -27,6 +24,55 @@ body, html {
     }
     .box {
         width: 100% !important;
+    }
+    .pTitle {
+        font-size: 2.5rem !important;
+    }
+    .pWe {
+        width: auto !important;
+        font-size: 1.2rem !important;
+    }
+    .rowCard {
+        width: auto !important;
+    }
+    .imgCard {
+        width: 50px !important;
+    }
+    .card-title {
+        font-size: 0.8rem !important;
+    }
+    .card-deck {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+    .card-deck .card {
+        display: block;
+        flex-basis: 33.3%;
+        /* change this value for each breakpoint*/
+    }
+    .conCard, .colCard, .rowCard {
+        padding: 0px;
+    }
+    .colBox {
+        margin-top: 0px !important;
+        height: 250px !important;
+    }
+    #hideCapsules {
+        margin-top: -100px !important;
+    }
+    .colDescription {
+        margin-top: 55px !important;
+    }
+    .pTitleSide {
+        font-size: 1.5rem !important;
+    }
+    .pTitleSideSub {
+        font-size: 1.1rem !important;
+    }
+    .rowCard2 {
+        width: auto !important;
     }
 }
 
@@ -110,7 +156,6 @@ body, html {
     font-size: 3rem;
     font-weight: 800;
     letter-spacing: 4px;
-    width: 700px;
 }
 
 .ptitlesub {
@@ -151,6 +196,11 @@ body, html {
 
 .card {
     border: 0px;
+    background-color: transparent !important;
+}
+
+.card-body {
+    background-color: transparent !important;
 }
 
 .card-title {
