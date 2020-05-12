@@ -23,10 +23,10 @@
 </head>
 
 <body>
-    <div class="container-fluid connavbar">
+    <div class="container-fluid connavbar sticky-top">
         <div class="container con">
             <nav class="navbar navbar-expand-md navbar-dark fixed-position"
-                style="padding: 15px 0px;background-color: white !important;">
+                style="padding: 15px 0px;">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -347,5 +347,17 @@
             </div>
         </div>
 </body>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.connavbar').css('background', 'transparent');
+            $('.nav-link').css('color', 'black');
+        } else {
+            $('.connavbar').css('background', 'rgba(0, 0, 0, 1)');
+            $('.nav-link').css('color', 'white');
+        }
+    });
+</script>
 
 </html>

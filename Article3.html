@@ -31,10 +31,9 @@
             onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=codepurse.github.io/Huris/articlesample1.html','_blank'); return false;">
         <img src="Image/twitterblack.png" class="img-fluid imgSocial">
     </div>
-    <div class="container-fluid connavbar">
+    <div class="container-fluid connavbar sticky-top">
         <div class="container con">
-            <nav class="navbar navbar-expand-md navbar-dark fixed-position"
-                style="padding: 15px 0px;background-color: white !important;">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-position" style="padding: 15px 0px;;">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -311,5 +310,17 @@
 </body>
 <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/tl_PH/sdk.js#xfbml=1&version=v4.0"></script>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.connavbar').css('background', 'transparent');
+            $('.nav-link').css('color', 'black');
+        } else {
+            $('.connavbar').css('background', 'rgba(0, 0, 0, 1)');
+            $('.nav-link').css('color', 'white');
+        }
+    });
+</script>
 
 </html>
