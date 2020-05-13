@@ -19,7 +19,7 @@
   src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
 }
 
-* { 
+* {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -151,6 +151,36 @@
   }
   .cardSolution1, .cardSolution2, .cardSolution3 {
     padding: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #p2 {
+    font-size: 1.2rem !important;
+  }
+  .btnSolution {
+    margin-top: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .rowEvent2 {
+    display: none !important;
+  }
+  .rowEvent3 {
+    display: none !important;
+  }
+  .pmainevent {
+    font-size: 1.2rem !important;
+  }
+  .peventtitle {
+    font-size: 1rem !important;
+  }
+  .colEvent1 {
+    padding-left: 30px !important;
+  }
+  .pmaintitle {
+    font-size: 1rem !important;
   }
 }
 
@@ -544,7 +574,7 @@ html {
 }
 
 #page-1 {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/header_image.jpeg);
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/Background/header_image.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,7 +594,7 @@ html {
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../Image/article1.jpg);
   cursor: pointer;
 }
 
@@ -584,7 +614,7 @@ html {
   transform: scale(1.1);
   background-size: cover;
   background-position: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Image/bg2.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Image/article1.jpg);
 }
 
 .inner-div:hover .colart1>.particletitle1 {
@@ -654,7 +684,7 @@ html {
 }
 
 #page-2 {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Image/event.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Image/Events/event.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1469,7 +1499,7 @@ ul li {
 .btnexplore {
   font-family: AvertaStd-Regular;
   color: white;
-  background-color: rgba(15,76,129, 0.9);
+  background-color: rgba(15, 76, 129, 0.9);
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 120%;
@@ -1502,11 +1532,10 @@ ul li {
   transition: all 0.2s;
 }
 
-.cardSolution1:hover * , .cardSolution2:hover * , .cardSolution3:hover * {
+.cardSolution1:hover *, .cardSolution2:hover *, .cardSolution3:hover * {
   color: white !important;
 }
 
-.cardSolution1:hover , .cardSolution2:hover , .cardSolution3:hover   {
+.cardSolution1:hover, .cardSolution2:hover, .cardSolution3:hover {
   background-color: #0f4c81;
 }
-
