@@ -4,6 +4,10 @@
     background-color: #f6f6f6;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+
 .connavbar {
     background-color: white;
 }
