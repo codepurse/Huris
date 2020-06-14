@@ -533,3 +533,9 @@ h2 {
   cursor: inherit;
   display: block;
 }
+
+.divHide {
+    height: 0px;
+    display: none;
+    transition: all 0.2s;
+}
