@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1280px !important;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+  .pfooter {
+    font-size: 25px !important;
+    margin-top: 30px !important;
+    line-height: 140% !important;
+    margin-left: 10px;
+  }
+  .pquestionsfooter {
+    margin-top: 0px !important;
+    margin-left: 10px !important;
+  }
+  .col2footer {
+    margin-top: 0px !important;
+    top: 10%;
+    margin-left: 10px;
+  }
+  .psolutions {
+    font-size: 20px !important;
+  }
+  .peventlocation {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+    .btnexploremore {
+      display: none;
+    }
+    .col2footer {
+      top: 0% !important;
+    }
+    .psoltext {
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+    }
+    .psolutions {
+      font-size: 20px !important;
+    }
+    .pSolutions {
+      font-size: 1.5rem !important;
+      margin-top: 10px !important;
+    }
+    .pSolutionsDesc {
+      width: 100% !important;
+    }
+    .imgSolution1, .imgSolution2, .imgSolution3 {
+      display: none !important;
+    }
+    .btnexplore {
+      display: none !important;
+    }
+    .cardSolution1, .cardSolution2, .cardSolution3 {
+      padding: 0px !important;
+    }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    font-family: "Roboto Mono";
+    overflow: hidden !important;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.conPage4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Image/Background/try.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s;
+}
+
+.pfooter {
+    font-family: AvertaStd-Regular;
+    color: white;
+    font-size: 67px;
+    font-weight: bold;
+    line-height: 115%;
+}
+
+.pquestionsfooter {
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.ptitlefooter {
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ptitlefootersub {
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 170%;
+}

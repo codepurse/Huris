@@ -154,22 +154,23 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-12" >
-                <div class="card"> 
+            <div class="col-lg-4 col-12">
+                <div class="card">
                     <a class="btn secondaryparentAnimate text-center mx-auto" id="secondarysecondtab">
-                        <img class="card-img-top mx-auto mg-fluid" src="Image/Clients/cipd_img.png" alt="Card image cap" style="width: 100px;">
+                        <img class="card-img-top mx-auto mg-fluid" src="Image/Clients/cipd_img.png" alt="Card image cap"
+                            style="width: 100px;">
                     </a>
                 </div>
             </div>
             <div class="col-lg-4 col-12">
-                    <a class="btn secondaryparentAnimate text-center mx-auto" id="secondarythirdtab">
-                        <div class="card-body">
-                            <h5 class="card-title"><strong>Executive Coaching</strong></h5>
-                        </div>
-                    </a>
-                </div>
+                <a class="btn secondaryparentAnimate text-center mx-auto" id="secondarythirdtab">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Executive Coaching</strong></h5>
+                    </div>
+                </a>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="container con" id="hideCapsules" style="z-index: -99999 !important;">
@@ -182,12 +183,12 @@
                 </div>
             </div>
             <div class="col-lg-5 colDescription" style="padding-left: 40px;position: relative;padding-top: 40px;">
-                <p class="pNumber"></p>
+                <p class="pNumber" id="GoScroll"></p>
                 <div class="divSide">
                     <p class="pTitleSide"></p>
                     <p class="pTitleSideSub" id="pTitleSideSub"></p>
                     <input type="hidden" id="inquire_val" value="" />
-                    <a href="contactus.html"><button class="btnExplore">Inquire Now</button></a>
+                    <a href="contactus.html"><button class="btnExplore">Inquire</button></a>
                 </div>
             </div>
         </div>
@@ -284,169 +285,247 @@
 
         var createCapsules = `
                 <div class="col-lg-4 col-6 colBox text-center">
-                    <div class="btn box contentAllText">
-                        <p class="pTitleBox pTopic mb-0"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText">
+                            <p class="pTitleBox pTopic mb-0"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="margin-top: 40px;">
-                    <div class="btn box contentAllText w-100" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText w-100" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 80px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
                         <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%; margin-top: -60px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
                         <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: -20px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                        </div>
+                    </a>
+
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 20px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
+                   
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
                         <p class="pTitleBox pTopic mb-0" style="color: white;">
                         </p>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: -60px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
+                  
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
                         <p class="pTitleBox pTopic mb-0" style="color: white;">
                         </p>
                     </div>
+                    </a>
                 </div>
     `;
 
         var createSecondaryCapsules1 = `
             <div class="col-lg-4 col-6 colBox" style="width: 100%;">
-                <div class="btn box contentAllText">
-                    <p class="pTitleBox pTopic mb-0"></p>
-                </div>
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText">
+                        <p class="pTitleBox pTopic mb-0"></p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+              
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%; margin-top: -80px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+              
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: -40px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;">
-                <div class="btn box contentAllText" style="background-color: #225992;"">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;"">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
 
             <div class="col-lg-4 col-6 colBox" style="width: 100%">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 80px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" id="outofbox" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%; margin-top: -80px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: -40px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" id="turnaround" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-4 col-6 colBox" style="width: 100%;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
     `;
 
         var createsecondaryCapsules2 = `
             <div class="col-lg-5 col-6" style="width: 70%;">
-                <div class="btn box contentAllText">
+                
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText">
                     <p class="pTitleBox pTopic mb-0"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-5 col-6" style="width: 70%;margin-top: 40px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-5 col-6" style="width: 70%;margin-top: -30px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
             <div class="col-lg-5 col-6" style="width: 70%; margin-top: 10px;">
-                <div class="btn box contentAllText" style="background-color: #225992;">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText" style="background-color: #225992;">
                     <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
                 </div>
+                </a>
             </div>
     `;
         var createsecondaryCapsules3 = `
             <div class="col-lg-4" style="width: 100%;">
-                <div class="btn box contentAllText">
+               
+                <a href = "#GoScroll">
+                    <div class="btn box contentAllText">
                     <p class="pTitleBox pTopic mb-0"></p>
                 </div>
+                </a>
             </div>
     `;
 
         var createCapsules4 = `
                 <div class="col-lg-4 col-6 colBox text-center">
-                    <div class="btn box contentAllText">
-                        <p class="pTitleBox pTopic mb-0"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText">
+                            <p class="pTitleBox pTopic mb-0"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="margin-top: 40px;">
-                    <div class="btn box contentAllText w-100" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText w-100" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 80px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%; margin-top: -60px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: -20px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;"></p>
-                    </div>
+                    
+                    
                 </div>
                 <div class="col-lg-4 col-6 colBox" style="width: 100%;margin-top: 20px;">
-                    <div class="btn box contentAllText" style="background-color: #225992;">
-                        <p class="pTitleBox pTopic mb-0" style="color: white;">
-                        </p>
-                    </div>
+                    
+                    <a href = "#GoScroll">
+                        <div class="btn box contentAllText" style="background-color: #225992;">
+                            <p class="pTitleBox pTopic mb-0" style="color: white;">
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 
     `;

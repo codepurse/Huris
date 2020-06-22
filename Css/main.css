@@ -256,6 +256,8 @@
 body, html {
   font-family: "Roboto Mono";
   overflow: hidden !important;
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -718,7 +720,7 @@ html {
   width: 70%;
 }
 
-#page-4 {
+.conPage4{
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Image/Background/try.jpg);
   background-position: center center;
   background-repeat: no-repeat;
