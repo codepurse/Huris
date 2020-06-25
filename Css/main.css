@@ -256,8 +256,7 @@
 body, html {
   font-family: "Roboto Mono";
   overflow: hidden !important;
-  height: 100%;
-  width: 100%;
+
 }
 
 html {
@@ -378,7 +377,7 @@ html {
 
 .overlay {
   position: fixed;
-  background: #1E88E5;
+  background: #212121;
   top: 0;
   left: 0;
   width: 100%;
@@ -391,7 +390,7 @@ html {
 }
 
 .overlay.open {
-  opacity: .9;
+  opacity: 1;
   visibility: visible;
   height: 100%;
 }
@@ -420,13 +419,12 @@ html {
 
 .overlay nav {
   position: relative;
-  height: 70%;
+  height: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 50px;
+  font-size: 1.5rem;
   font-family: 'Vollkorn', serif;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -463,6 +461,7 @@ html {
 }
 
 .overlay ul li a:after {
+  font-size: 1rem !important;
   content: '';
   position: absolute;
   bottom: 0;
