@@ -78,15 +78,21 @@
     font-size: 30px !important;
   }
   .particletitle1 {
-    font-size: 30px !important;
+    font-size: 1.1rem !important;
   }
-  .colarticle2 {
-    display: none !important;
-    visibility: hidden !important;
+  .colart {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
-  .colarticle3 {
-    display: none !important;
-    visibility: hidden !important;
+  .particlecontent1 {
+   width: 90% !important;
+  }
+  .btn-primary {
+    display: none;
   }
   nav {
     right: 10px !important;
@@ -256,7 +262,6 @@
 body, html {
   font-family: "Roboto Mono";
   overflow: hidden !important;
-
 }
 
 html {
@@ -583,7 +588,6 @@ html {
 }
 
 .outer-div {
-  height: 100vh;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -631,7 +635,6 @@ html {
 }
 
 .outer-div1 {
-  height: 100vh;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -658,7 +661,6 @@ html {
 }
 
 .outer-div2 {
-  height: 100vh;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -719,7 +721,7 @@ html {
   width: 70%;
 }
 
-.conPage4{
+.conPage4 {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Image/Background/try.jpg);
   background-position: center center;
   background-repeat: no-repeat;
